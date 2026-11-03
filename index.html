@@ -23,23 +23,74 @@ section{padding:clamp(64px,8vw,105px) clamp(20px,8vw,125px)}.title{text-align:ce
 .map{max-width:900px;margin:25px auto;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#181818;box-shadow:var(--shadow)}.map iframe{display:block;width:100%;height:350px;border:0}.map-actions{padding:14px}.map-actions a,.map-actions button{padding:11px 16px;border:0;border-radius:999px;font-weight:700;cursor:pointer}.primary{background:var(--gold);color:#111}.secondary{background:#333;color:#fff}.map-status{text-align:center;color:#bbb;padding:0 12px 13px}
 .overlay,.lightbox{display:none;position:fixed;inset:0;z-index:3000;background:#000e;align-items:center;justify-content:center;padding:20px}.open{display:flex!important}.box{width:min(430px,100%);background:#191919;padding:25px;border-radius:20px}.actions{display:flex;gap:8px}.actions button{flex:1;padding:10px}.admin-inbox{display:none;max-width:960px;margin:25px auto;padding:22px}.admin-inbox.visible{display:block}.message-item{background:#242424;padding:15px;margin:12px 0;border-radius:14px}.message-body{white-space:pre-wrap}.lightbox img{max-width:95vw;max-height:88vh}.close{position:absolute;right:20px;top:12px;background:none;border:0;color:#fff;font-size:44px}.live-popup{display:none;position:fixed;right:22px;bottom:22px;z-index:6000;background:#1b1b1b;border:1px solid var(--gold);border-radius:18px;padding:18px}.live-popup.show{display:block}footer{text-align:center;padding:30px;color:#999;background:#070707}
 @media(max-width:800px){header{flex-direction:column}.hero{min-height:72vh;place-items:end start;padding:50px 18px 32px}.hero>div{width:min(520px,88vw)}section{padding:55px 5%}#gallery .photo,#gallery .photo.landscape{grid-column:span 6}}@media(max-width:560px){#gallery .photo,#gallery .photo.landscape{grid-column:1/-1}}
-</style>
+.pricing-intro{max-width:850px;margin:-24px auto 36px;text-align:center;color:var(--muted);line-height:1.7}.pricing-intro strong{display:block;margin-bottom:8px;color:var(--gold2);font-size:18px}.pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:1200px;margin:auto}.package-card{position:relative;overflow:hidden;padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#1b1b1b,#111);box-shadow:0 18px 50px rgba(0,0,0,.22)}.package-card:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}.package-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:18px}.package-head h3{margin:0;font-size:25px}.package-card .cost{font-size:30px;white-space:nowrap;text-align:right}.package-summary{margin:0 0 16px;padding:13px 15px;border:1px solid rgba(216,180,80,.25);border-radius:13px;background:rgba(216,180,80,.07);color:#eee;line-height:1.55}.package-description{color:var(--muted);line-height:1.65}.included-title{margin:20px 0 10px;color:var(--gold2);font-size:15px}.package-list,.delivery-list{margin:0;padding-left:21px;color:#d6d1c7;line-height:1.7}.package-list li,.delivery-list li{margin:5px 0}.pricing-note{max-width:1200px;margin:28px auto 0;padding:26px;border:1px solid rgba(216,180,80,.3);border-radius:20px;background:linear-gradient(145deg,rgba(216,180,80,.09),rgba(15,15,15,.92))}.pricing-note h3{margin:0 0 13px}.pricing-note-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.brand-signoff{text-align:center;margin:24px 0 0;color:var(--gold2);font-weight:700}.package-disclaimer{max-width:1000px;margin:18px auto 0;text-align:center;color:#999;font-size:13px;line-height:1.6}@media(max-width:800px){.pricing-grid,.pricing-note-grid{grid-template-columns:1fr}.package-head{align-items:center}.package-card{padding:23px}.package-card .cost{font-size:27px}}</style>
 </head>
 <body>
 <header><div class="logo">28<span>Photography</span></div><nav><a href="#home">Home</a><a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#collections">Collections</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><button class="admin-btn" id="adminBtn" type="button">Admin Login</button></nav></header>
 <div class="deal-bar" id="dealBar"><div class="deal-track"><span class="deal-item activeDealText"></span><span class="deal-item activeDealText"></span></div></div>
 <section class="hero" id="home"><div><h1>28 Photography</h1><p>Capturing Love, Life &amp; Beautiful Memories</p><a class="btn" href="#portfolio">View Portfolio</a></div></section>
-<section id="about"><h2 class="title">About</h2><p class="about">Photography for singles, couples, maternity, families, small groups, special moments and events. Sessions can be held outdoors or at your home around Christchurch.</p></section>
+<section id="about">
+ <h2 class="title">About Me</h2>
+ <div class="about">
+  <p>Hi, I’m <strong>Dinesh Khanal</strong>, the photographer behind <strong>28 Photography</strong>. I come from an IT background, and photography started as a personal interest that I wanted to explore further.</p>
+  <p>I’m still growing and developing my photography skills, which is why I aim to keep my sessions relaxed, friendly and affordable. For me, 28 Photography is about enjoying the creative side of photography while capturing meaningful moments for people around Christchurch.</p>
+ </div>
+</section>
 <section id="portfolio"><h2 class="title">Featured Portfolio</h2><div class="grid">
 <article class="card"><a href="#price-maternity"><img src="maternity1.jpg" loading="lazy" alt="Maternity photography"><div class="card-body"><h3>Maternity Photography</h3><p>View maternity pricing</p></div></a></article>
 <article class="card"><a href="#price-family"><img src="beach-couple.jpg" loading="lazy" alt="Couple photography"><div class="card-body"><h3>Couple Photography</h3><p>View family / group pricing</p></div></a></article>
 <article class="card"><a href="#price-family"><img src="ultrasound.jpg" loading="lazy" alt="Special moments"><div class="card-body"><h3>Special Moments</h3><p>View family / group pricing</p></div></a></article></div></section>
 <section id="collections"><h2 class="title">Photo Collections</h2><div class="tabs" id="collectionTabs"><button class="tab active" data-cat="all">All Photos</button><button class="tab" data-cat="single">Singles</button><button class="tab" data-cat="couple">Couple</button><button class="tab" data-cat="family">Family</button><button class="tab" data-cat="maternity">Maternity</button><button class="tab" data-cat="special">Special Moments</button><button class="tab" data-cat="events">Events</button></div><div id="gallery"></div><p id="galleryEmpty" hidden style="text-align:center">No photos in this collection yet.</p><div class="admin-inbox" id="adminInbox"><h3>Website Messages <span id="messageBadge">0</span></h3><p id="realtimeStatus">Live notifications: connecting...</p><button class="btn" id="refreshMessages">Refresh Messages</button><div id="messageList"></div></div></section>
-<section id="pricing"><h2 class="title">Pricing</h2><div class="grid">
-<div class="price" id="price-mini"><h3>Mini</h3><div class="cost" data-base="60"><span class="from">From</span> <span class="base">$60</span></div><p>30 minutes · Around 50-80 photos taken · 8 edited digital photos delivered</p><p>A quick session for one person or a couple.</p></div>
-<div class="price" id="price-maternity"><h3>Maternity</h3><div class="cost" data-base="100"><span class="from">From</span> <span class="base">$100</span></div><p>60 minutes · Around 100-160 photos taken · 15 edited digital photos delivered</p><p>A relaxed maternity session outdoors or at home.</p></div>
-<div class="price" id="price-family"><h3>Family / Group</h3><div class="cost" data-base="120"><span class="from">From</span> <span class="base">$120</span></div><p>60 minutes · Around 120-200 photos taken · 18 edited digital photos delivered</p><p>Families, couples and groups up to 6 people.</p></div>
-<div class="price"><h3>Small Events</h3><div class="cost" data-base="150"><span class="from">From</span> <span class="base">$150</span></div><p>90 minutes · Around 200-300 photos taken · 25 edited digital photos delivered</p><p>Birthdays, gatherings and small events.</p></div></div></section>
+<section id="pricing">
+ <h2 class="title">Photography Packages</h2>
+ <div class="pricing-intro">
+  <strong>Affordable photography · Christchurch, New Zealand</strong>
+  Capture beautiful moments and memories with relaxed photography sessions for individuals, couples, families and special occasions.
+ </div>
+
+ <div class="pricing-grid">
+  <article class="package-card" id="price-mini">
+   <div class="package-head"><h3>Mini Photography</h3><div class="cost" data-base="60"><span class="from">From</span> <span class="base">$60</span></div></div>
+   <p class="package-summary"><strong>30 minutes</strong> · Around 30–50 photos taken · 20–30 selected digital photos delivered, including 5 edited photos.</p>
+   <p class="package-description">A quick, relaxed session for one person or a couple. Ideal for portraits, special moments and natural memories.</p>
+   <h4 class="included-title">What’s included</h4>
+   <ul class="package-list"><li>30-minute photography session</li><li>One person or a couple</li><li>One outdoor location in Christchurch</li><li>20–30 selected digital photos delivered</li><li>5 edited high-resolution photos</li><li>Private online gallery for viewing and downloading</li></ul>
+  </article>
+
+  <article class="package-card" id="price-maternity">
+   <div class="package-head"><h3>Maternity Photography</h3><div class="cost" data-base="100"><span class="from">From</span> <span class="base">$100</span></div></div>
+   <p class="package-summary"><strong>60 minutes</strong> · Around 60–100 photos taken · 40–60 selected digital photos delivered, including 10 edited photos.</p>
+   <p class="package-description">Celebrate the journey of motherhood with a relaxed maternity session outdoors or in the comfort of your home.</p>
+   <h4 class="included-title">What’s included</h4>
+   <ul class="package-list"><li>60-minute maternity session</li><li>Mum-to-be, with partner welcome</li><li>One outdoor location or an at-home session</li><li>40–60 selected digital photos delivered</li><li>10 edited high-resolution photos</li><li>Private online gallery for viewing and downloading</li></ul>
+  </article>
+
+  <article class="package-card" id="price-family">
+   <div class="package-head"><h3>Family / Group Photography</h3><div class="cost" data-base="120"><span class="from">From</span> <span class="base">$120</span></div></div>
+   <p class="package-summary"><strong>60 minutes</strong> · Around 80–120 photos taken · 50–70 selected digital photos delivered, including 12 edited photos.</p>
+   <p class="package-description">Capture genuine smiles, family connections and special memories in a relaxed session for families and groups.</p>
+   <h4 class="included-title">What’s included</h4>
+   <ul class="package-list"><li>60-minute photography session</li><li>Families or groups of up to 6 people</li><li>One outdoor location in Christchurch</li><li>50–70 selected digital photos delivered</li><li>12 edited high-resolution photos</li><li>Private online gallery for viewing and downloading</li></ul>
+  </article>
+
+  <article class="package-card" id="price-events">
+   <div class="package-head"><h3>Small Event Photography</h3><div class="cost" data-base="150"><span class="from">From</span> <span class="base">$150</span></div></div>
+   <p class="package-summary"><strong>Up to 90 minutes</strong> · Around 120–180 photos taken · 70–100 selected digital photos delivered, including 20 edited photos.</p>
+   <p class="package-description">Capture smiles, celebrations and special moments at birthdays, family gatherings and other small private events.</p>
+   <h4 class="included-title">What’s included</h4>
+   <ul class="package-list"><li>Up to 90 minutes of photography</li><li>Small birthdays and private gatherings</li><li>Candid moments and group photographs</li><li>70–100 selected digital photos delivered</li><li>20 edited high-resolution photos</li><li>Private online gallery for viewing and downloading</li></ul>
+  </article>
+ </div>
+
+ <div class="pricing-note">
+  <div class="pricing-note-grid">
+   <div><h3>Photo Delivery Information</h3><ul class="delivery-list"><li>All delivered photos are selected for quality.</li><li>Each package includes the stated number of fully edited photos.</li><li>Remaining selected photos receive basic adjustments where needed.</li><li>RAW files, duplicate images and rejected photos are not included.</li><li>Photos are delivered digitally through a private online gallery.</li></ul></div>
+   <div><h3>Delivery Time</h3><ul class="delivery-list"><li>Mini sessions: 7–10 working days.</li><li>Maternity, family and event sessions: 10–14 working days.</li><li>High-resolution digital images are ready to download and share.</li><li>Delivery times are estimates and may vary during busy periods.</li></ul></div>
+  </div>
+  <p class="brand-signoff">28 Photography · Capturing moments, creating memories.</p>
+ </div>
+ <p class="package-disclaimer">The number of photos taken and selected may vary depending on the session, movement, lighting and group size. The included edited-photo quantity is guaranteed.</p>
+</section>
 <section id="contact"><h2 class="title">Book A Session</h2><div class="contact-layout">
 <div class="contact-card"><h3>Contact by Email</h3><p>Enter your details, then choose an email option.</p><form id="emailForm"><input id="emailName" required maxlength="80" placeholder="Your Name"><input id="emailAddress" type="email" required placeholder="Your Email"><input id="emailSubject" required value="Photography Booking Enquiry"><textarea id="emailMessage" required minlength="10" maxlength="800" rows="7" placeholder="Tell us about your photography requirements..."></textarea><div class="contact-actions"><button class="btn" id="gmailBtn" type="button">Gmail</button><button class="btn" id="outlookBtn" type="button">Outlook</button><button class="btn" id="emailAppBtn" type="button">Email Directly</button></div><p class="status" id="emailStatus"></p></form></div>
 <div class="contact-card"><h3>Leave a Message</h3><p>Save your enquiry securely to the 28 Photography inbox.</p><form id="siteMessageForm"><input id="visitorName" required maxlength="80" placeholder="Your Name"><input id="visitorEmail" type="email" required placeholder="Your Email"><input id="visitorSubject" required maxlength="120" placeholder="Subject"><textarea id="visitorMessage" required minlength="10" maxlength="800" rows="7" placeholder="Write a clear photography enquiry..."></textarea><label class="consent"><input id="visitorFirstTime" type="checkbox" checked><span>This is my first enquiry. Apply the active deal or FIRST5.</span></label><button class="btn" type="submit">Leave Message</button><p class="status" id="siteMessageStatus" aria-live="polite"></p></form></div></div>
